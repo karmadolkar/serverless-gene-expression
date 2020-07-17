@@ -1,0 +1,30 @@
+service: gene-expression
+app: serverless-gene-expression
+org: nigeltroy1
+
+provider:
+  name: aws
+  runtime: python3.8
+  stage: dev
+
+package:
+  individually: true
+
+functions:
+  genes-get:
+    handler: genes.get
+    module: lambdas
+    events:
+      - http:
+          path: /genes
+          method: get
+  genes-post:
+    handler: genes.post
+    module: lambdas
+    events:
+      - http:
+          path: /genes/update
+          method: post
+
+plugins:
+  - serverless-python-requirements
