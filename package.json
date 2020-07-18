@@ -1,0 +1,24 @@
+{
+  "name": "serverless-gene-expression-nigeltroy",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigeltroy/serverless-gene-expression.git"
+  },
+  "author": "nigeltroy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigeltroy/serverless-gene-expression/issues"
+  },
+  "homepage": "https://github.com/nigeltroy/serverless-gene-expression#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-offline": "^6.4.0",
+    "serverless-python-requirements": "^5.1.0"
+  }
+}
